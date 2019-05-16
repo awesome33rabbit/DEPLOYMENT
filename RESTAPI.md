@@ -7,7 +7,7 @@
 - headers: ```authorized:<authorized-keys>```
 - rtype: ```json```
 
-```- curl 127.0.0.1:9988/api/spider -X POST```
+- ```curl 127.0.0.1:9988/api/spider -X POST```
 
 ```
 {
@@ -27,7 +27,7 @@ category_name:<category-name>
 ```
 - rtype: ```json```
 
-```- curl 127.0.0.1:9988/api/category/add -F 'category_id=13' -F 'category_name=测试'```
+- ```curl 127.0.0.1:9988/api/category/add -F 'category_id=13' -F 'category_name=测试'```
 
 ```
 {
