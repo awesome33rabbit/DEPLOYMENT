@@ -14,8 +14,8 @@
     code: 200,
     data: [
       {
-          name: "习近平报道专题",
-          id: "1"
+          name: "<name>",
+          id: "<id>"
       }
 }
 ```
@@ -34,14 +34,14 @@
     code: 200,
     data: [
     {
-    id: "<id>",
-    title: "<title>",
-    author: "<author>",
-    images: "['url', 'url']",
-    videoSrc: "url",
-    time: "<time>",
-    type: "<type>"
-},
+        id: "<id>",
+        title: "<title>",
+        author: "<author>",
+        images: "['url', 'url']",
+        videoSrc: "url",
+        time: "<time>",
+        type: "<type>"
+    },
 }
 ```
 
