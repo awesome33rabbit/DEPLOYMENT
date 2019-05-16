@@ -25,10 +25,10 @@
 category_id:<category-id>
 category_name:<category-name>
 ```
+- rtype: ```json```
 
 ```curl 127.0.0.1:9988/api/category/add -F 'category_id=13' -f 'category_name=测试'```
 
-- rtype: ```json```
 ```
 {
     "code": <http-code>,
