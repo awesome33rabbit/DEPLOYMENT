@@ -22,7 +22,7 @@
 
 ## 2. ```/api/article/newslist```
 
-- description: 获取 新闻
+- description: 获取 新闻列表
 - method: ```GET```
 - headers: ```authorized:<authorized-keys>```
 - rtype: ```json```
