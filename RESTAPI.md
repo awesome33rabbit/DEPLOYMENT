@@ -16,7 +16,29 @@
 }
 ```
 
-## 2. ```/api/add_category```
+
+## 2. ```/api/category/list```
+
+- description: 获取分类列表
+- method: ```GET```
+- rtype: ```json```
+
+    - ```curl 127.0.0.1:9988/api/category/list```
+
+```
+{
+    "code": <http-code>,
+    "data": {
+            "id": "<id>",
+            "name": "<name>",
+        }
+    }
+}
+```
+
+
+
+## 3. ```/api/add_category```
 
 - description: 新增文章分类
 - method: ```POST```
@@ -36,7 +58,7 @@ category_name:<category-name>
 }
 ```
 
-## 3. ```/api/article_list```
+## 4. ```/api/article_list```
 
 - description: 获取文章列表
 - method: ```GET```
@@ -74,7 +96,7 @@ keyword:<keyword> default ''
 }
 ```
 
-## 4. ```/api/article/<article_id>```
+## 5. ```/api/article/<article_id>```
 
 - description: 获取文章
 - method: ```GET```
@@ -99,25 +121,6 @@ keyword:<keyword> default ''
             "category": {
                 "id": "<category-id>",
                 "display_name": "<category-name>"
-        }
-    }
-}
-```
-
-## 5. ```/api/category/list```
-
-- description: 获取分类列表
-- method: ```GET```
-- rtype: ```json```
-
-    - ```curl 127.0.0.1:9988/api/category/list```
-
-```
-{
-    "code": <http-code>,
-    "data": {
-            "id": "<id>",
-            "name": "<name>",
         }
     }
 }
