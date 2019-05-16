@@ -7,7 +7,7 @@
 - headers: ```authorized:<authorized-keys>```
 - rtype: ```json```
 
-```curl 127.0.0.1:9988/api/spider -X POST```
+```- curl 127.0.0.1:9988/api/spider -X POST```
 
 ```
 {
@@ -27,7 +27,7 @@ category_name:<category-name>
 ```
 - rtype: ```json```
 
-```curl 127.0.0.1:9988/api/category/add -F 'category_id=13' -f 'category_name=测试'```
+```- curl 127.0.0.1:9988/api/category/add -F 'category_id=13' -f 'category_name=测试'```
 
 ```
 {
@@ -47,9 +47,8 @@ limit:<max items> default 50
 keyword:<keyword> default ''
 ```
 - rtype: ```json```
-```
 
-```curl 127.0.0.1:9988/api/article_list?category_id=5```
+```- curl 127.0.0.1:9988/api/article_list?category_id=5```
 
 {
     "code": 200,
@@ -79,9 +78,8 @@ keyword:<keyword> default ''
 - description: 获取文章
 - method: ```GET```
 - rtype: ```json```
-```
 
-```curl 127.0.0.1:9988/api/article/t20190514_32069358```
+```- curl 127.0.0.1:9988/api/article/t20190514_32069358```
 
 {
     "code": <http-code>,
