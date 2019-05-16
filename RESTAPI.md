@@ -48,7 +48,7 @@ keyword:<keyword> default ''
 ```
 - rtype: ```json```
 
-```- curl 127.0.0.1:9988/api/article_list?category_id=5```
+    - ```curl 127.0.0.1:9988/api/article_list?category_id=5```
 
 ```
 {
@@ -80,7 +80,7 @@ keyword:<keyword> default ''
 - method: ```GET```
 - rtype: ```json```
 
-```- curl 127.0.0.1:9988/api/article/t20190514_32069358```
+    - ```curl 127.0.0.1:9988/api/article/t20190514_32069358```
 
 ```
 {
