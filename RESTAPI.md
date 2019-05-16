@@ -12,7 +12,7 @@
 ```
 {
     code: 200,
-    data: [
+    tabList: [
         {
             name: "<name>",
             id: "<id>"
@@ -34,7 +34,7 @@
 ```
 {
     code: 200,
-    data: [
+    newsList: [
         {
             id: "<id>",
             title: "<title>",
