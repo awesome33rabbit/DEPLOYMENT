@@ -1,6 +1,6 @@
 # Documentation
 
-## 1. ```/api/article/tab```
+## 1. ```/api/article/tablist```
 
 - description: 获取 分类列表
 - method: ```GET```
@@ -20,7 +20,7 @@
 }
 ```
 
-## 2. ```/api/article/tab```
+## 2. ```/api/article/newslist```
 
 - description: 获取 新闻
 - method: ```GET```
