@@ -13,10 +13,11 @@
 {
     code: 200,
     data: [
-      {
-          name: "<name>",
-          id: "<id>"
-      }
+        {
+            name: "<name>",
+            id: "<id>"
+        },
+    ]
 }
 ```
 
@@ -34,15 +35,16 @@
 {
     code: 200,
     data: [
-    {
-        id: "<id>",
-        title: "<title>",
-        author: "<author>",
-        images: "['url', 'url']",
-        videoSrc: "url",
-        time: "<time>",
-        type: "<type>"
-    },
+        {
+            id: "<id>",
+            title: "<title>",
+            author: "<author>",
+            images: "['url', 'url']",
+            videoSrc: "url",
+            time: "<time>",
+            type: "<type>"
+        },
+    ]
 }
 ```
 
