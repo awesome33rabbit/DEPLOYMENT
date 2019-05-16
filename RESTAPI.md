@@ -103,3 +103,22 @@ keyword:<keyword> default ''
     }
 }
 ```
+
+## 5. ```/api/category/list```
+
+- description: 获取分类列表
+- method: ```GET```
+- rtype: ```json```
+
+    - ```curl 127.0.0.1:9988/api/category/list```
+
+```
+{
+    "code": <http-code>,
+    "data": {
+            "id": "<id>",
+            "name": "<name>",
+        }
+    }
+}
+```
