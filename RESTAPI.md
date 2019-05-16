@@ -86,16 +86,19 @@ keyword:<keyword> default ''
 {
     "code": <http-code>,
     "data": {
-        "id": "<id>",
-        "title": "<title>",
-        "date": "<date>",
-        "source": "<source>",
-        "author_avatar": "<author_avatar>",
-        "content": "<content>",
-        "editor": "<editor>",
-        "category": {
-            "id": "<category-id>",
-            "display_name": "<category-name>"
+            "id": "<id>",
+            "title": "<title>",
+            "date": "<date>",
+            "source": "<source>",
+            "content": "<content>",
+            "editor": "<editor>",
+            "imgs": ["<img>", "<img>"],
+            "video": "<video>",
+            "audio": "<audio>",
+            "author_cover": "<author_cover>",
+            "category": {
+                "id": "<category-id>",
+                "display_name": "<category-name>"
         }
     }
 }
