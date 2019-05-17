@@ -10,7 +10,7 @@
     article_imgs         <list>:['url', 'url']    图片地址列表
     article_video        <str>:'url'              视频地址
     article_video        <str>:'url'              音频地址
-    article_cover        <str>::'str'             封面（如果图片列表中有数据，取第一张图片；如果图片列表没有数据，则为'NULL'）
+    article_cover        <str>:'str'             封面（如果图片列表中有数据，取第一张图片；如果图片列表没有数据，则为'NULL'）
     article_url          <str>:'url'              新闻链接原地址
     article_category_id  <str>:'str'              分类ID
 ### TABLE api_category
