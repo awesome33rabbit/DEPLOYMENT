@@ -1,5 +1,6 @@
 # MySQL
-### DATABASE working
+# DATABASE working
+### TABLE api_article
     article_id           <str>     新闻ID
     article_title        <str>     新闻标题
     article_date         <str>     xxxx-xx-xx  新闻发布日期
@@ -12,6 +13,6 @@
     article_cover        <str>     封面（如果图片列表中有数据，取第一张图片；如果图片列表没有数据，则为‘NULL’）
     article_url          <str>     新闻链接原地址
     article_category_id  <str>     分类ID
-### TABLE api_article, api_category
+### TABLE api_category
     category_id          <str>     分类ID
     category_name        <str>     分类名称
