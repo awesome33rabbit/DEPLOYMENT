@@ -1,6 +1,6 @@
 # MySQL
 ### DATABASE working
-    - article_id           <str>     新闻ID
+     - article_id           <str>     新闻ID
     - article_title        <str>     新闻标题
     - article_date         <str>     xxxx-xx-xx  新闻发布日期
     - article_source       <str>     新闻来源
