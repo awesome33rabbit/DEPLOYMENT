@@ -1,4 +1,4 @@
-:smirk:
+- :smirk:
 
 - ![MySQL DATA](https://github.com/awesome33rabbit/mission/blob/master/DATA.md)
 
