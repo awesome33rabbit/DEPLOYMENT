@@ -7,14 +7,18 @@ sudo apt install -y supervisor
 
 or
 
-```pip install supervisor```
+```
+pip install supervisor
+```
 
 因为 supervisor 不支持 Python3 因此，确保 pip 版本是 Python2
 ## 配置 supervisor
 
 安装完成后不要启动，首先创建配置文件
 
-```sudo vim /etc/supervisor/supervisord.conf```
+```
+sudo vim /etc/supervisor/supervisord.conf
+```
 
 目录结构可以更改，配置文件一定要以 .conf 结尾 写入下面内容
 
@@ -62,12 +66,16 @@ files = /etc/supervisor/conf.d/*.conf
 ```[include]``` 为管理配置文件目录
 ## 启动 supervisor
 
-```sudo supervisord -c /etc/supervisor/supervisord.conf```
+```
+sudo supervisord -c /etc/supervisor/supervisord.conf
+```
 
 ```/etc/supervisor/supervisord.conf```是配置文件所在目录
 ## celery 配置文件
 
-```sudo vim /etc/supervisor/conf.d/szttcelery.conf```
+```
+sudo vim /etc/supervisor/conf.d/szttcelery.conf
+```
 
 ```szttcelery.conf```文件名可以修改，但是应保存在 supervisor 配置 ```[include]``` 字段定义的路径下，并以 ```.conf```结尾
 
@@ -94,7 +102,9 @@ stdout_logfile = /root/logs/celery.log
 
 ## django 配置文件
 
-```sudo vim /etc/supervisor/conf.d/szttserver.conf```
+```
+sudo vim /etc/supervisor/conf.d/szttserver.conf
+```
 
 写入以下内容
 ```
@@ -114,15 +124,21 @@ stdout_logfile = /root/logs/server.log
 具体的修改和 celery 同理
 ## 安装 gunicorn
 
-```pip3 install gunicorn```
+```
+pip3 install gunicorn
+```
 
 ## 启动 supervisor
 
-```supervisorctl```
+```
+supervisorctl
+```
 
 ## 进入supervisor 交互shell
 
-```reload```
+```
+reload
+```
 
 重新载入管理配置
 
