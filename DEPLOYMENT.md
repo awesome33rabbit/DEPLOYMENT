@@ -1,14 +1,16 @@
-#部署方案
-##安装 supervisor
+# 部署方案
+## 安装 supervisor
 
-```sudo apt install -y supervisor```
+```
+sudo apt install -y supervisor
+```
 
 or
 
 ```pip install supervisor```
 
 因为 supervisor 不支持 Python3 因此，确保 pip 版本是 Python2
-配置 supervisor
+## 配置 supervisor
 
 安装完成后不要启动，首先创建配置文件
 
@@ -58,12 +60,12 @@ files = /etc/supervisor/conf.d/*.conf
 ```[inet_http_server]```的内容是用来从 web 端管理 supervisor 如果不需要可以直接删除
 
 ```[include]``` 为管理配置文件目录
-启动 supervisor
+## 启动 supervisor
 
 ```sudo supervisord -c /etc/supervisor/supervisord.conf```
 
 ```/etc/supervisor/supervisord.conf```是配置文件所在目录
-celery 配置文件
+## celery 配置文件
 
 ```sudo vim /etc/supervisor/conf.d/szttcelery.conf```
 
@@ -90,7 +92,7 @@ stdout_logfile = /root/logs/celery.log
     - ```directory``` 为项目路径
     - ```stdout_logfile``` 为 log file,可自行修改
 
-django 配置文件
+## django 配置文件
 
 ```sudo vim /etc/supervisor/conf.d/szttserver.conf```
 
@@ -110,15 +112,15 @@ stdout_logfile_backups = 20
 stdout_logfile = /root/logs/server.log
 ```
 具体的修改和 celery 同理
-安装 gunicorn
+## 安装 gunicorn
 
 ```pip3 install gunicorn```
 
-启动 supervisor
+## 启动 supervisor
 
 ```supervisorctl```
 
-进入supervisor 交互shell
+## 进入supervisor 交互shell
 
 ```reload```
 
