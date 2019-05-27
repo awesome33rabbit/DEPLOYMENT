@@ -29,6 +29,7 @@
 - rtype: ```json```
 
     - ```curl 127.0.0.1:9988/api/article/newslist```
+    - ```curl 127.0.0.1:9988/api/article/newslis?type=1```
     - ```curl 127.0.0.1:9988/api/article/newslist?limit=50```
 
 ```
@@ -43,6 +44,27 @@
             videoSrc: "url",
             time: "<time>",
             type: "<type>"
+        },
+    ]
+}
+```
+
+## 3. ```/api/article/content```
+
+- description: 获取 新闻内容
+- method: ```GET```
+- headers: ```authorized:<authorized-keys>```
+- rtype: ```json```
+
+    - ```curl 127.0.0.1:9988/api/article/conent?article_id=article_id```
+
+```
+{
+    code: 200,
+    content: [
+        {
+            id: "<id>",
+            content: "<content>",
         },
     ]
 }
