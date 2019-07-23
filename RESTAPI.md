@@ -29,8 +29,9 @@
 - rtype: ```json```
 
     - ```curl 127.0.0.1:9988/api/article/newslist```
-    - ```curl 127.0.0.1:9988/api/article/newslis?type=1```
+    - ```curl 127.0.0.1:9988/api/article/newslist?type=1```
     - ```curl 127.0.0.1:9988/api/article/newslist?limit=50```
+    - ```curl 127.0.0.1:9988/api/article/newslist?page=1```
 
 ```
 {
